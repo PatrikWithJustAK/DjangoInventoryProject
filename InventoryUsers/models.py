@@ -5,7 +5,6 @@ from django.utils import timezone
 from django.utils.translation import gettext as _
 from .managers import CustomUserManager
 
-# Create your models here.
 
 class CustomUser(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(_('email address'), unique = True )

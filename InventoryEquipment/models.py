@@ -29,7 +29,6 @@ class EquipmentInstance(models.Model):
     EQUIPMENT_STATUS = (
         ('A', 'Active'),
         ('I', 'Inactive'),
-
     )
     id = models.UUIDField(primary_key=True, default=uuid.uuid4)
     equipment = models.ForeignKey(Equipment, verbose_name=("Which type of equipment is this"), on_delete=models.CASCADE)
@@ -47,3 +46,10 @@ class EquipmentInstance(models.Model):
     manager = models.ForeignKey(CustomUser, verbose_name=_("Manager responsible for this equipment"), on_delete=models.CASCADE)
     def __str__(self):
         return str(self.serial_number)
+
+class Transaction(models.Model):
+    
+    equipment_instance = models.ForeignKey(EquipmentInstance, verbose_name=("The equipment that this transaction is for"), on_delete=models.CASCADE, blank=True)
+    date_submitted = models.DateTimeField(_("When was this Transaction Submitted?"), auto_now=True, auto_now_add=True)
+    date_approved = models.DateTimeField(_("When was this Transaction Approved?"), auto_now=False, auto_now_add=False, blank=True, null=True)
+    serial_number = models.CharField(_("Serial Number for the associated Equipment"), max_length=50)
