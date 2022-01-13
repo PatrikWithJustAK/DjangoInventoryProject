@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -24,113 +20,47 @@
                 }
             </script>
     </head>
-    <body class='min-h-screen bg-gradient-radial to-teal-500 from-lime-300 via-emerald-200'>
-        <div class= 'grid grid-cols-3  items-center  mix-blend-normal py-4 max-h-20 place-content-center'>
-            <div class =' items-center bg-teal-800 max-w-min'> {% comment %} Start Of sidebar{% endcomment %}
-                <div class ='col-span-1 flex bg-teal-800 '>
-                    Test
-                    Test
-                    Test
-                    Test
-                    Test
-                </div>
-            </div> {% comment %}End of Sidebar{% endcomment %}
-            <div>
-                <h1 class= 'border-green-900 border  col-start-2 text-center bg-gradient-to-r via-emerald-200 from-emerald-300   to-teal-300 justify-center text-3xl text-green-900 rounded-lg shadow-xl '>
-                    P Gammon
-                </h1>
-            </div>
-        </div>{# End First Row #}
-            <div class= ' flex items-center  justify-center place-content-center'> {# Start Second Row #}
-                <div class='grid md:grid-cols-3 grid-cols-1 gap-4  rounded-2xl  opacity-70 hover:opacity-80'>
-        {% for equipmentinstance in equipmentinstance_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipmentinstance.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %} 
-        {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %} 
-        {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %} 
-                {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %} 
-        {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %} 
-        {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %} 
-        {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %} 
-        {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %} 
-        {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %} 
-                {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %} 
-        {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %} 
-        {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %}        
-        
+    <body class='min-h-screen bg-gradient-radial to-stone-900 from-violet-200 via-stone-500'> 
+            <div class= 'grid grid-cols-3 items-center mix-blend-normal py-4 max-h-20 place-content-center'>
+                {% comment %} 
+                Start Of sidebar vvvvvvvvvvvvvvvvvvvvvvvvvvvv
+                {% endcomment %}
+                <div class ='col-start-1  max-w-min '> 
+                    <div class ='invisible lg:visible flex rounded-2xl py-4 px-2 ml-2 mt-36 bg-stone-300 max-w-min'>
+                        <ul class=' text-sm text-black-800 font-bold'>
+                            <li><a href='{% url "StoreTransactions" %}'>Transactions</a></li>
+                            <li><a href='http://www.google.com'>Test</a></li>
+                            <li><a href='http://www.google.com'>Test</a></li>
+                            <li><a href='http://www.google.com'>Test</a></li>
+                            <li><a href='http://www.google.com'>Test</a></li>
+                        </ul>
+                    </div>
+                </div> 
+                {% comment %}
+                End of Sidebar^^^^^^^^^^^^^^^^^^^^^^^^^
 
+                Start of Banner vvvvvvvvvvvvvvvv
+                {% endcomment %}
+                <div class='flex justify-center py-36 my-12'>
+                    <h1 class= ' px-8 border-stone-900 border  col-start-2 text-center bg-gradient-to-r via-stone-200 from-neutral-300   to-stone-600 justify-center text-3xl text-stone-900 rounded-lg shadow-xl font-bold '>
+                        P Gammon
+                    </h1>
+                </div>
+            </div>
+            {# Start of grid #}
+                <div class= ' flex items-center  justify-center place-content-center'> 
+                    <div class='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4  rounded-2xl  opacity-70 hover:opacity-80'>
+                            {% for equipmentinstance in equipmentinstance_list %}
+                                    <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-stone-800 bg-gradient-to-r from-stone-200 to-stone-400 via-stone-100 shadow-lg shadow-stone-900 '>
+                                        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipmentinstance.serial_number}}</h1>
+                                        <h3 class= 'text-center text-lg font-bold'>{{equipmentinstance.store_location}}</h1>
+                                            <h2 class= 'text-center text-lg font-bold '>{{equipmentinstance.last_transaction_date}}</h1>
+                                        </div>
+                                {% endfor %} 
+        </div>
     </div>
-</div>
-        <script src="" async defer></script>
+        
+            <script src="" async defer></script>
+        
     </body>
 </html>

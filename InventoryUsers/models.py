@@ -12,7 +12,8 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     is_manager = models.BooleanField(_("Is this the manager of a store?"), default=False)
     is_active= models.BooleanField(_("Has this user been activated?"), default=True)
     date_joined = models.DateTimeField(_("When did this user join?"), default=timezone.now)
-    is_staff = models.BooleanField((""), default=False)
+    is_staff = models.BooleanField(("Is this a staff member at the store?"), default=False)
+    home_store = models.ForeignKey("InventoryStores.Storelocation", verbose_name=_("The store that this user works at"), on_delete=models.CASCADE)
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
 

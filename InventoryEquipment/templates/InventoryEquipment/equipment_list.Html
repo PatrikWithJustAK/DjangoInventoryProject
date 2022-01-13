@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -24,111 +20,43 @@
                 }
             </script>
     </head>
-    <body class='min-h-screen bg-gradient-radial to-teal-500 from-lime-300 via-emerald-200'>
-        <div class= 'grid grid-cols-3  items-center  mix-blend-normal py-4 max-h-20 place-content-center'>
-            <div class =' items-center bg-teal-800 max-w-min'> {% comment %} Start Of sidebar{% endcomment %}
-                <div class ='col-span-1 flex bg-teal-800 '>
-                    Test
-                    Test
-                    Test
-                    Test
-                    Test
+    <body class='min-h-screen bg-gradient-radial to-teal-500 from-lime-300 via-emerald-200'>        
+        <div class= 'grid grid-cols-3 items-center mix-blend-normal py-4 max-h-20 place-content-center'>
+            {% comment %} 
+            Start Of sidebar vvvvvvvvvvvvvvvvvvvvvvvvvvvv
+            {% endcomment %}
+            <div class ='col-start-1  max-w-min flex'> 
+                <div class ='flex rounded-2xl px-9 mx-6 mt-36 bg-teal-800 max-w-min'>
+                    <ul class='list-disc text-sm text-lime-200 font-semibold'>
+                        <li><a href='{% url "StoreTransactions" %}'>Transactions</a></li>
+                        <li><a href='http://www.google.com'>Test</a></li>
+                        <li><a href='http://www.google.com'>Test</a></li>
+                        <li><a href='http://www.google.com'>Test</a></li>
+                        <li><a href='http://www.google.com'>Test</a></li>
+                    </ul>
                 </div>
-            </div> {% comment %}End of Sidebar{% endcomment %}
+            </div> 
+            {% comment %}
+            End of Sidebar^^^^^^^^^^^^^^^^^^^^^^^^^
+
+            Start of Banner vvvvvvvvvvvvvvvv
+            {% endcomment %}
             <div>
-                <h1 class= 'border-green-900 border  col-start-2 text-center bg-gradient-to-r via-emerald-200 from-emerald-300   to-teal-300 justify-center text-3xl text-green-900 rounded-lg shadow-xl '>
+                <h1 class= 'border-green-900 border  col-start-2 text-center bg-gradient-to-r via-emerald-200 from-emerald-300   to-teal-300 justify-center text-3xl text-green-900 rounded-lg shadow-xl font-bold '>
                     P Gammon
                 </h1>
             </div>
-        </div>{# End First Row #}
-            <div class= ' flex items-center  justify-center place-content-center'> {# Start Second Row #}
+        </div>
+        {# Start of grid #}
+            <div class= ' flex items-center  justify-center place-content-center'> 
                 <div class='grid md:grid-cols-3 grid-cols-1 gap-4  rounded-2xl  opacity-70 hover:opacity-80'>
-        {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %} 
-        {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %} 
-        {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %} 
-                {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %} 
-        {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %} 
-        {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %} 
-        {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %} 
-        {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %} 
-        {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %} 
-                {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %} 
-        {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %} 
-        {% for equipment in equipment_list %}
-                        <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
-        <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
-        <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
-        <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
-        </div>
-        {% endfor %}        
-        
-
+                           {% for equipment in equipment_list %}
+                                <div class='hover:opacity-100 rounded-xl opacity-90 border-1 border-green-800 bg-gradient-to-r from-green-200 to-emerald-300 shadow-lg shadow-emerald-900 '>
+                                    <h1 class = "text-center text-3xl font-bold underline  mx-4">{{equipment.model}}</h1>
+                                    <h3 class= 'text-center text-lg font-bold'>{{equipment.manufacturer}}</h1>
+                                    <h2 class= 'text-center text-lg font-bold '>{{equipment.description}}</h1>
+                                    </div>
+                            {% endfor %} 
     </div>
 </div>
         <script src="" async defer></script>
